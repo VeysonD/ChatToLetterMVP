@@ -1,6 +1,10 @@
 angular.module('write-letter')
   .controller('appController', function(letter) {
-    //this.text = ;
+    this.handleClick = () => {
+      throw error;
+      event.preventDefault();
+      console.log(event);
+    };
 
   })
   .component('app', {

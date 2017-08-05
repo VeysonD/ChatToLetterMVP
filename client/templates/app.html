@@ -6,4 +6,15 @@
   <div id="textInput">
     <text-input text="$ctrl.text"></text-input>
   </div>
+  <div>
+    <form ng-click="signUp($event)">
+      <input
+        ng-model="$ctrl.input"
+        class="form-control"
+        type="text"
+      />
+      <button class="btn" ng-click="$ctrl.handleClick()">
+      </button>
+    </form>
+  </div>
 </div>
