@@ -1,5 +1,5 @@
 angular.module('write-letter')
-  .controller('appController', function($scope) {
+  .controller('textInputController', function($scope) {
     this.handleClick = (event) => {
       //console.log(event);
       //event.preventDefault();
@@ -12,8 +12,9 @@ angular.module('write-letter')
   })
   .component('textInput', {
     bindings: {
-      message: '<'
+      message: '<',
+      letter: '<'
     },
-    controller: 'appController',
+    controller: 'textInputController',
     templateUrl: 'client/templates/textInput.html'
   })

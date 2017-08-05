@@ -1,4 +1,6 @@
 <form id="send" name="submit" ng-submit="$ctrl.handleClick($event)">
+  <h4>{{$ctrl.letter}}</h4>
+  <h3>{{$ctrl.message}}</h3>
   <input id="text" ng-model="$ctrl.input" value="Enter a word!" type="text" required>
   <input class="submit" type="submit" value="Submit a word">
 </form>
