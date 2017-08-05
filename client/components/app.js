@@ -1,5 +1,6 @@
 angular.module('write-letter')
   .controller('appController', function(letter) {
+    //this.text = ;
 
   })
   .component('app', {

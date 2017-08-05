@@ -3,6 +3,9 @@ angular.module('write-letter')
 
   })
   .component('textInput', {
+    bindings: {
+      message: '<'
+    },
     controller: 'appController',
     templateUrl: 'client/templates/textInput.html'
   })
