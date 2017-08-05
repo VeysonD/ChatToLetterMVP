@@ -5,9 +5,9 @@ angular.module('write-letter')
       //event.preventDefault();
       console.log(this.input);
       console.log($scope);
-      $scope.$ctrl.input = '';
-      $scope.submitMessage.$setUntouched();
-      $scope.submitMessage.$setPristine();
+      this.input = '';
+      $scope.submit.$setUntouched();
+      $scope.submit.$setPristine();
     }
   })
   .component('textInput', {
