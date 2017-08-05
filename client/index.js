@@ -1,6 +1,6 @@
 var app = angular.module('write-letter', [])
   .config(function($sceDelegateProvider) {
-    $sceDelegateProvider.resourceUrlWhiteLlist([
+    $sceDelegateProvider.resourceUrlWhitelist([
       'self',
       'https://zoom.us/**'
     ]);
