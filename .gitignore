@@ -4,3 +4,6 @@ node_modules
 
 #Deployment
 public
+
+#API Keys
+client/env/config.js
