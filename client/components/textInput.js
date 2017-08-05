@@ -1,6 +1,6 @@
 angular.module('write-letter')
   .controller('appController', function() {
-    this.handleClick = function(event) {
+    this.handleClick = (event) => {
       console.log(event);
       event.preventDefault();
       console.log(this.input);
