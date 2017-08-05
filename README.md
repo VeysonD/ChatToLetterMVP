@@ -17,38 +17,20 @@ Once the project moves into development, the press release can be used as a touc
  -->
 
 ## Heading ##
-  > Name the product in a way the reader (i.e. your target customers) will understand.
-
     Collaborative Communication Composer:  Chaos Mode
 ## Sub-Heading ##
-  > Describe who the market for the product is and what benefit they get. One sentence only underneath the title.
-
     Anyone looking for a quick laugh while bonding with small community of random people.
 ## Summary ##
-  > Give a summary of the product and the benefit. Assume the reader will not read anything else so make this paragraph good.
-
     Messages typed in chat will be displayed on the screen one word at a time.  After 15 seconds, a document is created and then saved on the website.  This letter then will be automatically sent to the recipient, whose name and e-mail is at the head of the letter.
 ## Problem ##
-  > Describe the problem your product solves.
-
     The world is a diverse place.  Getting many different people to come together and try to work together to have their collective voices heard is nearly an impossible feat.  This app will let everyone have a voice.
 ## Solution ##
-  > Describe how your product elegantly solves the problem.
-
     Everyone is able to contribute to the letter!  There are no restrictions on who can participate
 ## Quote from You ##
-  > A quote from a spokesperson in your company.
-
     "Everyone has a voice" - Man without a voice
 ## How to Get Started ##
-  > Describe how easy it is to get started.
-
     "Just go to the website, login, and start typing!"
 ## Customer Quote ##
-  > Provide a quote from a hypothetical customer that describes how they experienced the benefit.
-
     "I never knew it was possible for everyone to come together and have everyone be able to contribute to one message!"
 ## Closing and Call to Action ##
-  > Wrap it up and give pointers where the reader should go next.
-
     "Head to your local host now, sign up, and start creating group messages right now!"
