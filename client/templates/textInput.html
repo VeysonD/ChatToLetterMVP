@@ -1,4 +1,4 @@
-<form id="send" ng-click="$ctrl.handleClick($event)">
-  <input id="text" ng-model="$ctrl.input" value="Enter a word!!!!!" type="text">
+<form id="send" name="submitMessage" ng-submit="$ctrl.handleClick($event)">
+  <input id="text" ng-model="$ctrl.input" value="Enter a word!" type="text" required>
   <input class="submit" type="submit" value="Submit a word">
 </form>

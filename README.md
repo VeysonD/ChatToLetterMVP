@@ -21,11 +21,16 @@ Once the project moves into development, the press release can be used as a touc
 ## Sub-Heading ##
     Anyone looking for a quick laugh while bonding with small community of random people.
 ## Summary ##
-    Messages typed in chat will be displayed on the screen one word at a time.  After 15 seconds, a document is created and then saved on the website.  This letter then will be automatically sent to the recipient, whose name and e-mail is at the head of the letter.
+    Messages typed in chat will be displayed on the screen one word at a time.
+    After 15 seconds, a document is created and then saved on the website.
+    This letter then will be automatically sent to the recipient, whose name and e-mail is at the head of the letter.
 ## Problem ##
-    The world is a diverse place.  Getting many different people to come together and try to work together to have their collective voices heard is nearly an impossible feat.  This app will let everyone have a voice.
+    The world is a diverse place.
+    Getting many different people to come together and try to work together to have their collective voices heard is nearly an impossible feat.
+    This app will let everyone have a voice.
 ## Solution ##
-    Everyone is able to contribute to the letter!  There are no restrictions on who can participate
+    Everyone is able to contribute to the letter!
+    There are no restrictions on who can participate
 ## Quote from You ##
     "Everyone has a voice" - Man without a voice
 ## How to Get Started ##
