@@ -22,8 +22,7 @@ app.get('/messages', function(req, res, next) {
 
   Message.find({}).exec(function(err, messages) {
     console.log('GET messages', messages);
-    res.send(messages);
-    //res.status(200).send(messages);
+    res.status(200).send(messages);
   });
 })
 

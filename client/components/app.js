@@ -1,6 +1,9 @@
 angular.module('write-letter')
   .controller('appController', function($scope) {
-    this.messages = 'Hello';
+    //this.messages = 'Why is this happening';
+    this.messageRetrieve = (data) => {
+      this.messages = data;
+    }
     this.letter = 'meow';
 
   })

@@ -3,7 +3,10 @@ angular.module('write-letter')
     this.handleClick = (event) => {
       //console.log(event);
       zoom.retrieveMessages(messages => {
-        this.messages = messages;
+        console.log('What is', this);
+        console.log('$scope', $scope);
+        //this.messages = messages.data;
+        this.messages(messages);
       })
 
       console.log('After submit button GET request');
@@ -14,7 +17,7 @@ angular.module('write-letter')
   })
   .component('textInput', {
     bindings: {
-      message: '<',
+      messages: '<',
       letter: '<'
     },
     controller: 'textInputController',

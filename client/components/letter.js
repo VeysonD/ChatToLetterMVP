@@ -4,7 +4,8 @@ angular.module('write-letter')
   })
   .component('displayLetter', {
     bindings: {
-      letter: '<'
+      letter: '<',
+      messages: '<'
     },
     controller: 'letterController',
     templateUrl: 'client/templates/letter.html'
