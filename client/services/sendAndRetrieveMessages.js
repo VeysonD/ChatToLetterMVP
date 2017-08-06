@@ -22,9 +22,9 @@ angular.module('write-letter')
       console.log('GET messages');
       $http.get(this.server)
       .then(function(response) {
-        console.log('GET response 1', response);
+        console.log('GET response', response);
         if (callback) {
-          console.log('GET response callback 2', response);
+          console.log('GET response callback', response);
           callback(response);
         }
       })
