@@ -15,12 +15,10 @@ app.use(express.static(__dirname + '/'));
 app.get('/messages', function(req, res, next) {
   console.log('GET message request', req);
   console.log('GET message response', res);
-  // Message.find({}).exec(function(err, messages) {
-  //   res.status(200).send(links);
-  // })
-  console.log(next);
-  next();
 
+  Message.find({}).exec(function(err, messages) {
+    res.status(200).send(messages);
+  });
 })
 
 app.post('/messages', function(req, res) {
