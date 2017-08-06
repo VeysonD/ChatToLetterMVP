@@ -21,11 +21,13 @@ Once the project moves into development, the press release can be used as a touc
 ## Heading ##
     Collaborative Communication Composer:  Chaos Mode
 ## Sub-Heading ##
-    Anyone looking for a quick laugh while bonding with small community of random people.
+    Anyone looking for a quick laugh while bonding with small community of
+    random people.
 ## Summary ##
     Messages typed in chat will be displayed on the screen one word at a time.
     After 15 seconds, a document is created and then saved on the website.
-    This letter then will be automatically sent to the recipient, whose name and e-mail is at the head of the letter.
+    This letter then will be automatically sent to the recipient, whose name
+    and e-mail is at the head of the letter.
 ## Problem ##
     The world is a diverse place.
     Getting many different people to come together and try to work together to have their collective voices heard is nearly an impossible feat.
@@ -38,6 +40,8 @@ Once the project moves into development, the press release can be used as a touc
 ## How to Get Started ##
     "Just go to the website, login, and start typing!"
 ## Customer Quote ##
-    "I never knew it was possible for everyone to come together and have everyone be able to contribute to one message!"
+    "I never knew it was possible for everyone to come together and have
+    everyone be able to contribute to one message!"
 ## Closing and Call to Action ##
-    "Head to your local host now, sign up, and start creating group messages right now!"
+    "Head to your local host now, sign up, and start creating group messages
+    right now!"
