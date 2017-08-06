@@ -23,6 +23,7 @@
   "dependencies": {
     "angular": "^1.6.5",
     "bluebird": "^3.5.0",
+    "body-parser": "^1.17.2",
     "express": "^4.15.3",
     "express-partials": "^0.3.0",
     "express-session": "^1.15.5",
