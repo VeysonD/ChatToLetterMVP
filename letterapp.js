@@ -19,14 +19,29 @@ app.get('/messages', function(req, res, next) {
   //   res.status(200).send(links);
   // })
   console.log(next);
-    next();
+  next();
 
 })
 
 app.post('/messages', function(req, res) {
-  console.log('POST message request', req.body);
-  console.log('POST message response', res);
-  res.end();
+  //console.log('POST message request', req.body);
+  //console.log('POST message response', res);
+  var message = req.body.message;
+  var sender = req.body.sender;
+  var date_time = req.body.date_time;
+
+  var newMessage = new Message({
+    message: message,
+    sender: sender,
+    date_time: date_time
+  });
+  newMessage.save(function(err, nMessage) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+  //console.log('post new message', newMessage);
+  next();
 })
 
 module.exports = app;
