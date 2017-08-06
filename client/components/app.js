@@ -3,6 +3,7 @@ angular.module('write-letter')
     this.messages = 'Dear Robin, ';
     this.storedMessages = {};
 
+
     this.messageRetrieve = (data) => {
       for (var i = 0; i < data.length; i ++) {
         //console.log('Stop rerendering everything', this.storedMessages);

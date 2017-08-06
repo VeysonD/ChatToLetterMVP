@@ -1,14 +1,14 @@
 angular.module('write-letter')
   .service('zoom', function ($http, $window) {
     this.server = 'http://127.0.0.1:8080/messages' // maybe add || localhost
-
+    this.username = window.location.search.substr(10);
     this.postMessage = (message) => {
       console.log('POST messages', message);
       var date_time = new Date();
       var data = {
         date_time: date_time,
         message: message,
-        sender: 'Ricky'
+        sender: this.username
       }
       $http.post(this.server, data)
       .then(function(response) {

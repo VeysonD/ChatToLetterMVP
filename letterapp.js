@@ -43,7 +43,7 @@ app.post('/messages', function(req, res, next) {
       res.status(500).send(err);
     }
   });
-   next();
+   res.status(200).send('Posted');
 })
 
 module.exports = app;
