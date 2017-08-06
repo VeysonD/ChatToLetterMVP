@@ -1,10 +1,10 @@
 angular.module('write-letter')
-  .controller('textInputController', function($scope) {
+  .controller('textInputController', function($scope, zoom) {
     this.handleClick = (event) => {
-      //console.log(event);
-      //event.preventDefault();
-      console.log(this.input);
-      console.log($scope);
+      console.log('testing', zoom);
+      zoom.retrieveMessages(messages => {
+        this.messages = data;
+      })
       this.input = '';
       $scope.submit.$setUntouched();
       $scope.submit.$setPristine();
