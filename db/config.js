@@ -1,6 +1,5 @@
 var mongoose = require('mongoose');
 var db = mongoose.connection;
-console.log('running');
 
 mongoURI = 'mongodb://localhost/chaoschat';
 mongoose.connect(mongoURI);

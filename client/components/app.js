@@ -1,5 +1,5 @@
 angular.module('write-letter')
-  .controller('appController', function($scope, zoom) {
+  .controller('appController', function($scope) { //add zoom
     this.messages = 'Hello';
     this.letter = 'meow';
 

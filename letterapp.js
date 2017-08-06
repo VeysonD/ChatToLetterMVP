@@ -11,6 +11,10 @@ app.use(bodyParser.urlencoded({ extended: false}));
 
 app.use(express.static(__dirname + '/'));
 
+app.get('/', function(req, res, next) {
+  console.log('letterapp js get homepage request');
+  next();
+});
 
 app.get('/messages', function(req, res, next) {
   console.log('GET message request', req);
@@ -18,7 +22,8 @@ app.get('/messages', function(req, res, next) {
 
   Message.find({}).exec(function(err, messages) {
     console.log('GET messages', messages);
-    res.status(200).send(messages);
+    res.send(messages);
+    //res.status(200).send(messages);
   });
 })
 
