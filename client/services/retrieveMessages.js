@@ -3,11 +3,9 @@ angular.module('write-letter')
     this.server = 'http://127.0.0.1:8080/messages' // maybe add || localhost
     this.postMessage = () => {
       $http.post(this.server, {
-
+        //console.log('POSTING');
       })
     }
-
-
 
     this.retrieveMessages = (callback) => {
       console.log('RETRIEVING');

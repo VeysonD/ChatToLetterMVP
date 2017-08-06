@@ -1,11 +1,8 @@
 angular.module('write-letter')
-  .controller('appController', function($scope) { //add zoom
+  .controller('appController', function($scope) {
     this.messages = 'Hello';
     this.letter = 'meow';
 
-    // zoom.retrieveMessages(messages => {
-    //   this.messages = data;
-    // })
   })
   .component('app', {
     controller: 'appController',
