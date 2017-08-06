@@ -5,11 +5,12 @@ angular.module('write-letter')
 
     this.messageRetrieve = (data) => {
       for (var i = 0; i < data.length; i ++) {
+        //console.log('Stop rerendering everything', this.storedMessages);
         var messageId = data[i]._id;
         //Add only new messages to render
         if (!this.storedMessages[messageId]) {
           this.messages += data[i].message + ' ';
-          this.messageRetrieve[messageId] = true;
+          this.storedMessages[messageId] = true;
         }
       }
     }
