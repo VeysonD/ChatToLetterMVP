@@ -6,11 +6,19 @@ var bodyParser = require('body-parser');
 
 var app = express();
 
+//puts body properties in the request functions
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: false}));
 
+//Serves up index.html
 app.use(express.static(__dirname + '/'));
 
+//add in zoom keys
+var zoom_key = process.env['ZOOM_API_KEY'];
+var zoom_sec = process.env['ZOOM_API_SEC'];
+
+
+//Why does this never get console logged?
 app.get('/', function(req, res, next) {
   console.log('letterapp js get homepage request');
   next();
@@ -25,6 +33,18 @@ app.get('/messages', function(req, res, next) {
     res.status(200).send(messages);
   });
 })
+
+// app.get('/messages', function(req, res, next) {
+//   console.log('GET message request', req);
+//   console.log('GET message response', res);
+//
+//   var options = {
+//     qs: {api_key: zoom_key, api_secret: zoom_sec, data_type: "JSON",
+//   }
+//   var syncReq = syncrequest('GET', "https://api.zoom.us/v1/chat/get", options);
+//   var response = JSON.parse(syncReq.getBody('utf8'));
+//   res.status(200).send(response);
+// })
 
 app.post('/messages', function(req, res, next) {
   console.log('POST message request', req.body);

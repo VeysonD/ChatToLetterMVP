@@ -6,4 +6,4 @@ node_modules
 public
 
 #API Keys
-client/env/config.js
+client/env/zoom.env
