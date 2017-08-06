@@ -17,13 +17,14 @@ app.get('/messages', function(req, res, next) {
   console.log('GET message response', res);
 
   Message.find({}).exec(function(err, messages) {
+    console.log('GET messages', messages);
     res.status(200).send(messages);
   });
 })
 
-app.post('/messages', function(req, res) {
-  //console.log('POST message request', req.body);
-  //console.log('POST message response', res);
+app.post('/messages', function(req, res, next) {
+  console.log('POST message request', req.body);
+  console.log('POST message response', res);
   var message = req.body.message;
   var sender = req.body.sender;
   var date_time = req.body.date_time;
@@ -38,8 +39,7 @@ app.post('/messages', function(req, res) {
       res.status(500).send(err);
     }
   });
-  //console.log('post new message', newMessage);
-  next();
+   next();
 })
 
 module.exports = app;

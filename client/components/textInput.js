@@ -1,8 +1,8 @@
 angular.module('write-letter')
   .controller('textInputController', function($scope, zoom) {
     this.handleClick = (event) => {
-      console.log('testing', zoom);
       zoom.retrieveMessages(messages => {
+        console.log(messages);
         this.messages = data;
       })
       this.input = '';

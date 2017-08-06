@@ -1,7 +1,7 @@
 angular.module('write-letter')
   .service('zoom', function ($http, $window) {
     //this.server = 'http://parse.hrr.hackreactor.com/chatterbox/classes/messages'
-    this.server = '127.0.0.1/messages'
+    this.server = 'http://127.0.0.1:8080/messages' // maybe add || localhost
     this.postMessage = () => {
       $http.post(this.server, {
 
@@ -11,19 +11,16 @@ angular.module('write-letter')
 
 
     this.retrieveMessages = () => {
-      $http.get(this.server, {
-        data: {order: '-createdAt', limit: 20},
-        contentType: 'application/json',
-      })
+      $http.get(this.server)
       .then(function(response) {
-        console.log(response);
+        console.log('GET response 1', response);
         if (callback) {
-          console.log(response);
+          console.log('GET response callback 2', response);
           //callback(response)
         }
       })
       .catch(function(response) {
-        console.log(response);
+        console.log('is this an error? 3', response);
       })
     }
   })
