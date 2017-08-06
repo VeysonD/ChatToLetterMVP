@@ -3,9 +3,9 @@ angular.module('write-letter')
     this.messages = 'Hello';
     this.letter = 'meow';
 
-    zoom.retrieveMessages(messages => {
-      this.messages = data;
-    })
+    // zoom.retrieveMessages(messages => {
+    //   this.messages = data;
+    // })
   })
   .component('app', {
     controller: 'appController',
