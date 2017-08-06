@@ -1,10 +1,13 @@
 <div id="main">
   <h1>not chatterbox</h1>
+  <!--<h3>{{$ctrl.messages}}</h3> -->
   <div id="letter">
-    <display-letter messages="$ctrl.messages" letter="$ctrl.letter"></display-letter>
+    <display-letter
+    messages="$ctrl.messages"
+    letter="$ctrl.messages"
+    ></display-letter>
   </div>
   <div id="textInput">
-    <h3>{{$ctrl.messages}}</h3>
     <text-input messages="$ctrl.messageRetrieve" letter="$ctrl.letter"></text-input>
   </div>
 </div>

@@ -1,12 +1,9 @@
 angular.module('write-letter')
-  .controller('textInputController', function($scope, zoom) { //add zoom later
+  .controller('textInputController', function($scope, zoom) {
     this.handleClick = (event) => {
       //console.log(event);
       zoom.retrieveMessages(messages => {
-        console.log('What is', this);
-        console.log('$scope', $scope);
-        //this.messages = messages.data;
-        this.messages(messages);
+        this.messages(messages.data);
       })
 
       console.log('After submit button GET request');
