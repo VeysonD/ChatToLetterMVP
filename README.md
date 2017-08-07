@@ -30,8 +30,9 @@ Once the project moves into development, the press release can be used as a touc
     and e-mail is at the head of the letter.
 ## Problem ##
     The world is a diverse place.
-    Getting many different people to come together and try to work together to have their collective voices heard is nearly an impossible feat.
-    This app will let everyone have a voice.
+    Getting many different people to come together and try
+    to work together to have their collective voices heard
+    is nearly an impossible feat. This app will let everyone have a voice.
 ## Solution ##
     Everyone is able to contribute to the letter!
     There are no restrictions on who can participate
